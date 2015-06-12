@@ -1,4 +1,9 @@
-int main()
+int main(int argv, char **args)
 {
-    return 0;
-}                                                       
+    QApplication app(argv, args);
+
+    QTextEdit textEdit;
+    textEdit.show();
+
+    return app.exec();
+}

@@ -6,12 +6,12 @@
     <QtLibDir>$(QT_DIR)lib\</QtLibDir>
   </PropertyGroup>
   <PropertyGroup>
-    <IncludePath>$(QtIncludeDir);$(QtIncludeDir)QtCore;$(QtIncludeDir)QtWidgets;$(IncludePath)</IncludePath>
+    <IncludePath>$(QtIncludeDir);$(QtIncludeDir)QtCore;$(QtIncludeDir)QtWidgets;$(QtIncludeDir)QtGui;$(IncludePath)</IncludePath>
     <LibraryPath>$(QtLibDir);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>qtmain$(LibSuffix).lib;Qt5Core$(LibSuffix).lib;Qt5Widgets$(LibSuffix).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>qtmain$(LibSuffix).lib;Qt5Core$(LibSuffix).lib;Qt5Widgets$(LibSuffix).lib;Qt5Gui$(LibSuffix).lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

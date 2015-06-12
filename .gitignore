@@ -1,0 +1,3 @@
+out/*
+*.suo
+*.vcxproj.user
